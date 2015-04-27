@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Instamuter",
+  "description": "This extension mute some exes and selfie-girls",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://instagram.com/*", "https://instagram.com/*"],
+      "js": ["jquery.min.js" ,"script.js"]
+    }
+  ],
+
+  "permissions": [
+    "storage"
+  ]
+}

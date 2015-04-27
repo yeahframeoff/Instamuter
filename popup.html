@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body { 
+                min-width: 420px; 
+                overflow-x: hidden; 
+                font-family: Arial, sans-serif; 
+                font-size: 12px; 
+            }
+            input { 
+                width: 420px; 
+            }
+            input #save { 
+                font-weight: bold; width: auto; 
+            }
+        </style>
+        <script src="jquery.min.js"></script>
+        <script src="popup.js"></script>
+    </head>
+    <body>
+        <form id="addName" name="form">
+            <p>
+                <input id="profile" type="text" maxlength="45" name="name" />
+                <input id="save" type="submit" value="Save" />
+            </p>
+        </form>
+    </body>
+</html>
